@@ -23,6 +23,6 @@ module.exports = function TimeStamps(dispatch){
         event.authorName = `</a>${timeStr}][<a href='asfunction:chatNameAction,${event.authorName}@0@0'>${event.authorName}</a>`
         return true
     }
-    dispatch.hook('S_CHAT', 1, processChatEvent)
+    dispatch.hook('S_CHAT', 2, processChatEvent)
     dispatch.hook('S_PRIVATE_CHAT', 1, processChatEvent)
 }
